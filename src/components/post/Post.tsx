@@ -17,6 +17,8 @@ export const Post: FC<IPostComp> = ({ post }) => {
           alt={`post by ${post.userId}`}
           width={400}
           height={400}
+          placeholder={'blur'}
+          blurDataURL={'/blur.jpg'}
         />
       </div>
       <div className={style.content}>
