@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   },
   publisher: SITE_NAME,
   icons: {
-    shortcut: '/images/logo.svg',
-    icon: '/images/logo.svg',
+    shortcut: '/logo.svg',
+    icon: '/logo.svg',
   },
   openGraph: {
     url: process.env.NEXT_PUBLIC_APP_URL,
