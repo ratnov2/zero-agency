@@ -1,7 +1,7 @@
 'use client'
 
 import { FC } from 'react'
-import styles from './Pagination.module.scss'
+import styles from './pagination.module.scss'
 import { useRouter } from 'next/navigation'
 import { totalPages } from '@/app/page/[page]/page'
 
