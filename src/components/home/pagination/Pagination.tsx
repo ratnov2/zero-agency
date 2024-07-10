@@ -3,7 +3,7 @@
 import { FC } from 'react'
 import styles from './pagination.module.scss'
 import { useRouter } from 'next/navigation'
-import { totalPages } from '@/app/page/[page]/page'
+import { TOTAL_PAGES } from '@/constants/pagination.constants'
 
 interface IPagination {
   currentPage: number
@@ -25,7 +25,7 @@ export const Pagination: FC<IPagination> = ({ currentPage }) => {
       >
         Previous
       </button>
-      {[...Array(totalPages)].map((_, index) => {
+      {[...Array(TOTAL_PAGES)].map((_, index) => {
         const page = index + 1
         return (
           <button
@@ -41,7 +41,7 @@ export const Pagination: FC<IPagination> = ({ currentPage }) => {
       })}
       <button
         className={styles.pageButton}
-        disabled={currentPage === totalPages}
+        disabled={currentPage === TOTAL_PAGES}
         onClick={() => handlePageChange(currentPage + 1)}
       >
         Next
