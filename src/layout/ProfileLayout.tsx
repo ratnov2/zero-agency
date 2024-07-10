@@ -13,7 +13,8 @@ export const ProfileLayout = () => {
   const { loading, user } = useStore($user)
   const router = useRouter()
   useUserCheck()
-
+  console.log(user,loading);
+  
   if (loading === 'loading') {
     return (
       <div className={style.navbar__right}>

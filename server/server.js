@@ -36,7 +36,7 @@ export const register = async ({ email, password }) => {
 export const checkLogin = async (userId) => {
   return new Promise((res, rej) =>
     setTimeout(() => {
-      const user = users.find((u) => u.id === userId)
+      const user = users.find((u) => u.id === +userId)
       if (user) {
         res({ userId: id })
       } else {

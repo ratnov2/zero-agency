@@ -1,4 +1,3 @@
-import { $host } from '@/api/config'
 import { IAuthForm } from './types'
 import { login, register, checkLogin } from '@/../server/server'
 

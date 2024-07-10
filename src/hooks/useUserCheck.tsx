@@ -13,6 +13,7 @@ export const useUserCheck = () => {
       const userId = localStorage.getItem('userId')
       if (userId) addUser({ userId })
     }
+    console.log(query.isSuccess)
   }, [query.isSuccess])
   useEffect(() => {
     if (!query.isPending) {

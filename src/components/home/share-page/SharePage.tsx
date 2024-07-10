@@ -27,6 +27,9 @@ export const SharePage: FC<ISharePage> = ({
                 alt={`post by ${post.userId}`}
                 width={400}
                 height={400}
+                priority
+                placeholder={'blur'}
+                blurDataURL={'/blur.jpg'}
               />
             </div>
             <div className={style.cardBody}>

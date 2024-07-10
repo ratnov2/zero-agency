@@ -6,7 +6,6 @@ export const Header = () => {
   return (
     <div className={style.navbar}>
       <div className={style.navbar__left}>
-        <div className={style.navbar__logo}>{/* /logo/ */}</div>
         <Link href={'/'} className={style.navbar__title}>
           Zero-Agency
         </Link>

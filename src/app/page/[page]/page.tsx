@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 import { TOTAL_PAGES } from '@/constants/pagination.constants'
 import { getPostById } from '@/components/home/request/post-by-page'
 
-export const dynamicParams = true // true | false,
+export const dynamicParams = true
 
 export async function generateMetadata({ params }: IParams): Promise<Metadata> {
   return {
