@@ -1,0 +1,30 @@
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__icon {
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navbar__profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.loginButton {
+  display: block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: #005bb5;
+}

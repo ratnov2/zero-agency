@@ -1,0 +1,36 @@
+$user-background: #f0f2f5;
+$user-photo-border: #4caf50;
+$user-text-color: #333;
+
+.userProfile {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: $user-background;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    .userPhoto {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid $user-photo-border;
+      object-fit: cover;
+    }
+  }
+
+  .body {
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+      color: $user-text-color;
+      margin-top: 0;
+    }
+  }
+}
