@@ -5,6 +5,8 @@ import QueryProvider from '@/providers/QueryProvider'
 import { Header } from '@/components/header/Header'
 import { SITE_DESCRIPTION, SITE_NAME } from '@/constants/seo.constants'
 import { useWebVitals } from '@/components/web-witals'
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -44,12 +46,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-
-
   return (
     <html lang="en">
       <body className={inter.className}>
         <QueryProvider>
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_GID || ''} />
           <Header />
           {children}
         </QueryProvider>
