@@ -1,9 +1,10 @@
 'use client'
- 
+
 import { useReportWebVitals } from 'next/web-vitals'
- 
-export function WebVitals() {
+
+export function useWebVitals() {
   useReportWebVitals((metric) => {
     console.log(metric)
   })
+  return {}
 }

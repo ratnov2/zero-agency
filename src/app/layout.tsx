@@ -4,7 +4,7 @@ import './globals.css'
 import QueryProvider from '@/providers/QueryProvider'
 import { Header } from '@/components/header/Header'
 import { SITE_DESCRIPTION, SITE_NAME } from '@/constants/seo.constants'
-import { WebVitals } from '@/components/web-witals'
+import { useWebVitals } from '@/components/web-witals'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -44,10 +44,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <WebVitals />
         <QueryProvider>
           <Header />
           {children}
