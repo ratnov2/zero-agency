@@ -1,0 +1,35 @@
+/* styles/Error.module.scss */
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.errorTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.backHome {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #0070f3;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.backHome:hover {
+  background-color: #005bb5;
+}

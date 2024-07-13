@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Pagination } from '@/components/home/pagination/Pagination'
 import { IPost } from '@/services/post-service/types'
 import { FC } from 'react'
+import img from '../../../../public/img.jpg'
 
 interface ISharePage {
   params?: { page: string }
@@ -22,11 +23,11 @@ export const SharePage: FC<ISharePage> = ({
             <div className={style.cardHeader}>
               <Image
                 src={
-                  'https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg'
+                  img
                 }
                 alt={`post by ${post.userId}`}
-                width={400}
-                height={400}
+                // width={400}
+                // height={400}
                 priority
                 placeholder={'blur'}
                 blurDataURL={'/blur.jpg'}

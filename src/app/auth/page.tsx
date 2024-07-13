@@ -1,5 +1,4 @@
 import { Auth } from '@/components/auth/Auth'
-import { SITE_DESCRIPTION } from '@/constants/seo.constants'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -9,6 +8,7 @@ export const metadata: Metadata = {
 }
 
 const authPage = () => {
+ //throw new Error('Auth page')
   return <Auth />
 }
 
