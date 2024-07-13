@@ -8,6 +8,7 @@ export default function QueryProvider({
 }: {
   children: React.ReactNode
 }) {
+  console.log('FEFEEFFEEFFE', process.env.NEXT_PUBLIC_GOOGLE_GID)
   useWebVitals()
   const [queryClient] = useState(
     () =>
