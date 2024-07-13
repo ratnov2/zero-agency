@@ -46,6 +46,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  console.log('FEFEEFFEEFFE', process.env.NEXT_PUBLIC_GOOGLE_GID)
   return (
     <html lang="en">
       <body className={inter.className}>
